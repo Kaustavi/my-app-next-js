@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -50,6 +51,12 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <Link
+          href="/todo"
+          className="mt-4 text-blue-500 hover:underline"
+        >
+          Go to Todo List
+        </Link>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
